@@ -1,0 +1,31 @@
+
+.example-table-container {
+  position: relative;
+  min-height: 300px;
+  max-height: 350px;
+  overflow: auto;
+}
+table {
+    width: 100%;
+  }
+  
+
+  
+  tr.example-element-row:not(.example-expanded-row):hover {
+    background: #777;
+  }
+  
+  tr.example-element-row:not(.example-expanded-row):active {
+    background: #efefef;
+  }
+  
+  .example-element-row td {
+    border-bottom-width: 0;
+  }
+  
+  /*
+  .marge
+  {
+    margin-top: 25px;
+    text-align: center;
+  }*/

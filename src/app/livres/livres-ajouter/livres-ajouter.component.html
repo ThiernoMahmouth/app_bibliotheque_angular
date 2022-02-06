@@ -1,0 +1,31 @@
+<div class="container">    
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h2>Ajouter un nouveau Livre</h2>
+            <form [formGroup]="addLivreForm" (ngSubmit)="onEnregistrer()">
+                <div class="form-group">
+                    <label for="titre">Titre</label>
+                    <input type="text" class="form-control" formControlName="titre" id="titre">
+                </div>
+                <div class="form-group">
+                    <label for="auteur">Auteur</label>
+                    <input type="text" class="form-control" formControlName="auteur" id="auteur">
+                </div>
+                <div class="form-group">
+                    <label for="categorie">Catégorie</label>
+                    <input type="text" class="form-control" formControlName="categorie" id="categorie">
+                </div>
+                <div class="form-group">
+                    <label for="titre">Langue</label>
+                    <input type="text" class="form-control" formControlName="langue" id="langue">
+                </div>
+                <div class="form-group">
+                    <label for="nbre">Nombre d'exemplaires</label>
+                    <input type="number" class="form-control" formControlName="nbre" id="nbre">
+                </div>
+                <button class="btn btn-success" type="submit" [disabled]="addLivreForm.invalid">Enregistrer</button>
+                <button class="btn btn-info" [routerLink]="['/accueil']" routerLinkActive="active"  >Retour</button>
+            </form>
+        </div>
+    </div>
+</div>
